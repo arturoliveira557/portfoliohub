@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apresentação - PortfolioHUB</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #111827; color: #fff; }
+    section { min-height: 100vh; display: grid; place-items: center; padding: 3rem; border-bottom: 4px solid #a21caf; }
+    div { max-width: 900px; }
+    h1, h2 { font-size: clamp(2.5rem, 7vw, 5rem); margin-bottom: 1rem; }
+    p, li { font-size: clamp(1.2rem, 3vw, 2rem); line-height: 1.5; }
+    .tag { color: #f0abfc; text-transform: uppercase; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <section><div><p class="tag">Slide 1</p><h1>PortfolioHUB</h1><p>Criação de repositório com versionamento</p></div></section>
+  <section><div><p class="tag">Slide 2</p><h2>Objetivo</h2><p>Organizar projetos acadêmicos e pessoais em um repositório profissional no GitHub.</p></div></section>
+  <section><div><p class="tag">Slide 3</p><h2>Estrutura</h2><ul><li>Projetos acadêmicos</li><li>Projetos pessoais</li><li>Documentação</li><li>Apresentação</li></ul></div></section>
+  <section><div><p class="tag">Slide 4</p><h2>Versionamento</h2><p>Uso de commits para registrar cada etapa do desenvolvimento.</p></div></section>
+  <section><div><p class="tag">Slide 5</p><h2>Publicação</h2><p>Site publicado com GitHub Pages e integrado ao LinkedIn.</p></div></section>
+  <section><div><p class="tag">Slide 6</p><h2>Conclusão</h2><p>Aprendizado sobre organização, documentação, Git, GitHub e apresentação profissional.</p></div></section>
+</body>
+</html>

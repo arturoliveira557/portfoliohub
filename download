@@ -1,0 +1,39 @@
+# Planejamento do Repositório
+
+## Nome do repositório
+
+PortfolioHUB
+
+## Objetivo
+
+Criar um repositório público no GitHub para organizar projetos acadêmicos e pessoais, documentar o desenvolvimento e publicar uma página web por meio do GitHub Pages.
+
+## Seções planejadas
+
+1. **Projetos acadêmicos**: trabalhos e atividades desenvolvidos durante a formação.
+2. **Projetos pessoais**: estudos, práticas e projetos autorais.
+3. **Documentação**: arquivos explicando o planejamento, versionamento e entrega.
+4. **Apresentação**: roteiro e slides para o vídeo final.
+5. **Site**: página web publicada no GitHub Pages.
+
+## Estrutura básica de diretórios
+
+```text
+portfoliohub/
+├── assets/
+├── projetos/
+│   ├── academicos/
+│   └── pessoais/
+├── docs/
+├── apresentacao/
+├── index.html
+└── README.md
+```
+
+## Boas práticas adotadas
+
+- Uso de nomes claros para pastas e arquivos.
+- Separação entre HTML, CSS e JavaScript.
+- Criação de README principal e README por projeto.
+- Commits com mensagens objetivas.
+- Organização do conteúdo para facilitar a avaliação.
