@@ -74,3 +74,6 @@ Ao executar os testes, o resultado esperado é semelhante a:
 - Repositório GitHub: COLE_AQUI_O_LINK_DO_REPOSITORIO
 - Integrantes e RA: PREENCHER_NO_RELATORIO_FINAL
 
+  ## Atualização de documentação
+
+Atualização realizada para demonstrar o fluxo de branch e Pull Request da Entrega 1.
