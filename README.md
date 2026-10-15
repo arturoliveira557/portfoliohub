@@ -72,4 +72,4 @@ A submissão deve ser feita em **um PDF consolidado** na Sala Online contendo:
 - seção de análise comparativa e técnico-ética sobre agentes de IA;
 - links de Pull Requests relevantes.
 
-> Antes do envio, preencher no PDF os nomes e RAs de todos os integrantes e garantir que o Pull Request final tenha revisão de outro integrante.
+> Esta entrega está sendo realizada individualmente. Como não há outro integrante disponível para revisão entre pares, o PR final registra uma auto-revisão transparente e a validação automática pelo GitHub Actions antes do merge.
