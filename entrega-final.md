@@ -8,9 +8,13 @@
 - Issue da sprint final: https://github.com/arturoliveira557/portfoliohub/issues/2
 
 ## Antes de enviar
-- [ ] Preencher nome completo e RA de todos os integrantes no PDF.
-- [ ] Solicitar revisão de outro integrante no Pull Request final.
-- [ ] Confirmar que o GitHub Actions do PR está verde.
-- [ ] Fazer o merge somente após revisão e testes.
+- [ ] Preencher nome completo e RA do aluno no PDF.
+- [x] Registrar auto-revisão no Pull Request final, pois a entrega é individual.
+- [x] Confirmar que o GitHub Actions do PR está verde.
+- [ ] Fazer o merge após auto-revisão documentada e testes aprovados.
 - [ ] Gerar PDF consolidado contendo links, integrantes, resultado dos testes, análise de IA e Pull Requests.
-- [ ] Todos os membros devem enviar o mesmo PDF pela Sala Online.
+- [ ] Enviar o PDF consolidado pela Sala Online.
+
+
+## Observação sobre revisão
+Esta entrega está sendo realizada individualmente. Como não há outro integrante disponível para code review entre pares, a revisão do PR final foi documentada como auto-revisão e complementada pela execução automatizada dos testes no GitHub Actions.
