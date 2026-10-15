@@ -19,4 +19,6 @@ jobs:
       - name: Dependências
         run: pip install -r requirements-dev.txt
       - name: Executar test harness
+        env:
+          PYTHONPATH: .
         run: pytest -v
