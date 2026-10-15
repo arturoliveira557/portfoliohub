@@ -1,79 +1,75 @@
-# PortfolioHUB - Entrega 1: Ambiente, Especificação Técnica e Test Harness
+# PortfolioHUB — Entrega Final
 
 ## Visão geral
-O **PortfolioHUB** é uma aplicação simples para organizar e validar projetos acadêmicos/profissionais em um portfólio digital. Nesta entrega, o foco é demonstrar ambiente padronizado, especificação técnica no fluxo SDD (Spec-Driven Development), uso documentado de agente de IA e um harness de testes automatizados.
+O **PortfolioHUB** é uma aplicação em Python para organizar e validar projetos acadêmicos/profissionais em um portfólio digital. A solução foi desenvolvida seguindo princípios de SDD (Spec-Driven Development), testes automatizados, documentação de decisões e uso responsável de agentes de IA.
 
-## Governança do projeto
-Fluxo de branches recomendado:
+## Funcionalidades
+- cadastro lógico de projetos por título, categoria, URL e status;
+- validação de URL com HTTP/HTTPS e domínio;
+- validação dos campos obrigatórios;
+- listagem apenas de projetos válidos e publicados;
+- busca por categoria ignorando maiúsculas/minúsculas;
+- totalização de projetos publicados por categoria.
 
-- `main`: branch principal, protegida, sem commits diretos.
-- `develop`: branch de integração.
-- `feature/*`: branches de desenvolvimento por tarefa.
+## Arquitetura
+A aplicação é modular e concentrada em `app/portfoliohub.py`:
+- `Projeto`: estrutura de dados;
+- `validar_url`: valida links;
+- `validar_projeto`: valida os dados de um projeto;
+- `listar_projetos_publicados`: filtra projetos publicados e válidos;
+- `buscar_por_categoria`: pesquisa por categoria;
+- `total_por_categoria`: calcula quantidade por categoria.
 
-Regras sugeridas:
+As decisões arquiteturais estão registradas em `docs/adrs/`.
 
-1. Toda alteração deve sair de uma issue do GitHub Projects.
-2. Cada tarefa deve ser feita em uma branch `feature/nome-da-tarefa`.
-3. O merge deve acontecer por Pull Request, com revisão de pelo menos um integrante.
-4. O pipeline de testes deve passar antes do merge.
-
-## Estrutura do repositório
-
-```text
-app/                         Código principal da aplicação
-  portfoliohub.py            Regras e funções de validação de projetos
-
-tests/                       Testes automatizados
-  test_portfoliohub.py       Casos principais e edge cases
-
-docs/                        Documentação técnica
-  especificacao_sdd.md       Especificação do problema, requisitos e contratos
-  agentes_ia.md              Configuração e regras dos agentes de IA
-  feedback_refinamento.md    Registro de ajustes por feedback
-  adrs/                      Decisões arquiteturais
-  logs/resultado_testes.txt  Evidência textual de execução dos testes
-
-.github/workflows/tests.yml  Pipeline de testes no GitHub Actions
-Dockerfile                   Ambiente padronizado
-
-docker-compose.yml           Execução reprodutível dos testes
-requirements-dev.txt         Dependências de desenvolvimento
-AGENTS.md                    Diretrizes de contexto para agentes de IA
-.cursorrules                 Regras para uso no Cursor/SDD
-```
-
-## Instalação local
-
+## Instalação
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements-dev.txt
 ```
 
-## Execução do test harness
-
+## Execução dos testes
 ```bash
 pytest -v
 ```
 
-## Execução com ambiente padronizado via Docker
-
+Também é possível executar em ambiente padronizado:
 ```bash
 docker compose up --build
 ```
 
-## Evidência esperada
-Ao executar os testes, o resultado esperado é semelhante a:
+## Test harness
+O projeto possui 7 testes automatizados cobrindo cenários normais e de borda. A evidência registrada em `docs/logs/resultado_testes.txt` mostra **7 passed**, equivalente a 100% dos testes executados com sucesso.
 
-```text
-7 passed
-```
+## Governança de código
+Fluxo adotado:
+1. registrar o trabalho em issue;
+2. criar branch `feature/*`;
+3. realizar commits objetivos;
+4. abrir Pull Request;
+5. revisar antes do merge;
+6. manter a branch `main` como versão estável.
 
-## Links da entrega
+## Documentação
+- `docs/especificacao_sdd.md`: requisitos, regras de negócio e contratos;
+- `docs/feedback_refinamento.md`: refinamentos realizados;
+- `docs/agentes_ia.md`: uso e regras para agentes de IA;
+- `docs/adrs/`: decisões de arquitetura e testes;
+- `docs/analise_ia_etica.md`: análise comparativa e técnico-ética;
+- `docs/relato_experiencia.md`: aprendizados e desafios;
+- `docs/logs/resultado_testes.txt`: evidência de testes.
 
-- Repositório GitHub: COLE_AQUI_O_LINK_DO_REPOSITORIO
-- Integrantes e RA: PREENCHER_NO_RELATORIO_FINAL
+## Publicação
+- Repositório: https://github.com/arturoliveira557/portfoliohub
+- GitHub Pages: https://arturoliveira557.github.io/portfoliohub/
 
-  ## Atualização de documentação
+## Entrega final
+A submissão deve ser feita em **um PDF consolidado** na Sala Online contendo:
+- link do repositório público;
+- identificação dos integrantes (nome completo e RA);
+- relatório de execução dos testes com 100% de passagem;
+- seção de análise comparativa e técnico-ética sobre agentes de IA;
+- links de Pull Requests relevantes.
 
-Atualização realizada para demonstrar o fluxo de branch e Pull Request da Entrega 1.
+> Esta entrega está sendo realizada individualmente. Como não há outro integrante disponível para revisão entre pares, o PR final registra uma auto-revisão transparente e a validação automática pelo GitHub Actions antes do merge.
